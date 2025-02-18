@@ -10,8 +10,6 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem("user", JSON.stringify(user));
   };
 
-  
-
   const [
     checkUser,
     { data, error, isError, isSuccess, isLoading, isFetching },

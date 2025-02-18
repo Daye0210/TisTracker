@@ -56,8 +56,8 @@ function AppBarWithMenu({ isDarkMode, toggleDarkMode, userType }) {
   const menuOptions = {
     G: [
       { label: "Iniciar sesión", path: "/login" },
-      { label: "Registrarse como estudiante", path: "/registro-estudiante" },
-      { label: "Registrarse como docente", path: "/registro-docente" },
+      { label: "Registrarse", path: "/register" },
+
     ],
     E: [
       { label: "Home", path: "/student-home" },
@@ -65,12 +65,7 @@ function AppBarWithMenu({ isDarkMode, toggleDarkMode, userType }) {
       { label: "Cerrar sesión", path: "/logout" },
     ],
     D: [
-      { label: "Periodos Académicos", path: "/academic-periods" },
-      {
-        label: "Crear plantilla de evaluación",
-        path: "/evaluation-templates/create",
-      },
-      { label: "Ver plantillas de evaluación", path: "/evaluation-templates" },
+      { label: "Perfil", path: "/profile" },
       { label: "Cerrar sesión", path: "/logout" },
     ],
   };
@@ -89,7 +84,7 @@ function AppBarWithMenu({ isDarkMode, toggleDarkMode, userType }) {
               style={{ height: "40px", marginRight: "8px" }}
             />
             <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              TisTracker
+              Web
             </Typography>
           </Box>
 

@@ -10,6 +10,7 @@ import { Box } from "@mui/material";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 
 function App({ toggleTheme, isDarkMode }) {
     const { user } = useContext(AppContext);
@@ -24,6 +25,7 @@ function App({ toggleTheme, isDarkMode }) {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/" element={<Home />} />
+                    <Route path="/profile" element={<Profile />} />
 
                     <Route path="/*" element={<NotFound />} />
                 </Routes>

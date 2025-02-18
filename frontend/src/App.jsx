@@ -7,6 +7,8 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import NotFound from "./pages/NotFound";
 import AppBarWithMenu from "./components/AppBarWithMenu";
 import { Box } from "@mui/material";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App({ toggleTheme, isDarkMode }) {
   const { user } = useContext(AppContext);
@@ -21,6 +23,11 @@ function App({ toggleTheme, isDarkMode }) {
         />
         <Box sx={{ marginTop: "64px" }}>
           <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+
+
+
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </Box>

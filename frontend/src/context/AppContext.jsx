@@ -32,23 +32,6 @@ export const AppProvider = ({ children }) => {
     setUser(null);
   };
 
-  useEffect(() => {
-    if (user === null) {
-      checkUser();
-    }
-  }, [user, checkUser]);
-
-  useEffect(() => {
-    if (data) {
-      setUser(data.user);
-      console.log("el usuario es: ", data);
-    }
-    if (isError) {
-      console.log(error);
-      removeUserFromLocalStorage();
-    }
-  }, [data, isSuccess, isError]);
-
 
 
 
@@ -87,3 +70,5 @@ export const AppProvider = ({ children }) => {
 };
 
 export default AppContext;
+
+// HTTP://d:1234@www.vladvilñady.com.com:50/vladicito?id=456&name=vlad#esta

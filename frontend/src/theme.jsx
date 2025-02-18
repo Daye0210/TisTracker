@@ -4,26 +4,26 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#2A628F", // Azul
-      towhite: "#2A628F", //Azul -> Blanco en modo oscuro
+      main: "#4CAF50", // Verde
+      towhite: "#F1FAEE", // Blanco pastel
     },
     secondary: {
-      main: "#ffab91", // Coral pastel
+      main: "#8BC34A", // Verde claro
     },
     error: {
-      main: "#f48fb1", // Rosa pastel
+      main: "#E57373", // Rojo claro
     },
     warning: {
-      main: "#ffe082", // Amarillo pastel
+      main: "#FFB74D", // Naranja claro
     },
     info: {
-      main: "#81d4fa", // Azul pastel
-      details: "#8e9090", //Gris para textos de descripción
-      gray: "#efefef", //Gris claro para cajas grises
+      main: "#64B5F6", // Azul claro
+      details: "#8E9090", // Gris para textos de descripción
+      gray: "#F0F0F0", // Gris claro para cajas grises
     },
     success: {
-      main: "#c5e1a5", // Verde claro pastel
-      soft: "aliceblue",
+      main: "#81C784", // Verde claro
+      soft: "#E8F5E9", // Verde muy claro
     },
   },
   typography: {
@@ -35,26 +35,26 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#0B3F69", // Azul oscuro
-      towhite: "#f0f0f0",
+      main: "#388E3C", // Verde oscuro
+      towhite: "#F1FAEE", // Blanco pastel
     },
     secondary: {
-      main: "#ffab91", // Coral pastel
+      main: "#689F38", // Verde medio
     },
     error: {
-      main: "#f48fb1", // Rosa pastel
+      main: "#D32F2F", // Rojo oscuro
     },
     warning: {
-      main: "#ffe082", // Amarillo pastel
+      main: "#FFA000", // Naranja oscuro
     },
     info: {
-      main: "#81d4fa", // Azul pastel
-      details: "#8e9090",
-      gray: "#444444", // Transparente
+      main: "#1976D2", // Azul oscuro
+      details: "#8E9090", // Gris para textos de descripción
+      gray: "#444444", // Gris oscuro
     },
     success: {
-      main: "#c5e1a5", // Verde claro pastel
-      soft: "aliceblue",
+      main: "#388E3C", // Verde oscuro
+      soft: "#E8F5E9", // Verde muy claro
     },
   },
   typography: {

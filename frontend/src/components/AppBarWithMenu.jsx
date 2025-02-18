@@ -57,7 +57,6 @@ function AppBarWithMenu({ isDarkMode, toggleDarkMode, userType }) {
     G: [
       { label: "Iniciar sesión", path: "/login" },
       { label: "Registrarse", path: "/register" },
-
     ],
     E: [
       { label: "Home", path: "/student-home" },
@@ -66,6 +65,7 @@ function AppBarWithMenu({ isDarkMode, toggleDarkMode, userType }) {
     ],
     D: [
       { label: "Perfil", path: "/profile" },
+      { label: "Inicio", path: "/" },
       { label: "Cerrar sesión", path: "/logout" },
     ],
   };

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useLoginUserMutation } from "../api/userApi";
 import { useState } from "react";
 import AppContext from "../context/AppContext";
+import { CircularProgress } from "@mui/material";
 
 const Login = () => {
     const { user, setUser } = useContext(AppContext);
@@ -34,6 +35,23 @@ const Login = () => {
         console.log("login");
         login({ email: email, password: password });
     };
+
+    if (isLoading) {
+        return (
+            <Container
+                maxWidth="sm"
+                sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "80vh",
+                }}
+            >
+                <CircularProgress />
+            </Container>
+        );
+    }
+
     return (
         <Container maxWidth="sm">
             <Box display="flex" flexDirection="column">

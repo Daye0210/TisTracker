@@ -13,13 +13,11 @@ import Home from "./pages/Home";
 
 function App({ toggleTheme, isDarkMode }) {
     const { user } = useContext(AppContext);
-    const userType = user ? user.user_type : "G";
     return (
         <LocalizationProvider dateAdapter={AdapterDateFns}>
             <AppBarWithMenu
                 darkMode={isDarkMode}
                 toggleDarkMode={toggleTheme}
-                userType={userType}
             />
             <Box sx={{ marginTop: "64px" }}>
                 <Routes>

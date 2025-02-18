@@ -32,9 +32,6 @@ export const AppProvider = ({ children }) => {
     setUser(null);
   };
 
-
-
-
   const handleLogout = async () => {
     try {
       await logoutUser().unwrap();
